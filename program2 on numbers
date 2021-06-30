@@ -1,0 +1,27 @@
+// 12345  ---> 24   135
+import java.util.*;
+class prg2
+{
+public static void main(String args[])
+{
+int n=12345;
+int r,even=0,odd=0;
+int even_count=1,odd_count=1;
+while(n!=0)
+{
+r=n%10;
+n=n/10;
+if(r%2==0)
+{
+  even=even+(r*even_count);
+   even_count= even_count*10;
+}
+else
+   {
+   odd= odd+(r*odd_count);
+   odd_count = odd_count*10;
+  }
+}
+System.out.println(even+"   "+odd);
+}
+}
