@@ -1,0 +1,16 @@
+// sum of  first & last 1234 ---->  4+1 = 5
+class prg3
+{
+public static void main(String args[])
+{
+int a=1234,r=0,sum;
+int last=a%10;
+while(a!=0)
+{
+r=a%10;
+a=a/10;
+}
+sum=last+r;
+System.out.print("Sum of first and last digits:"+sum);
+}
+}
